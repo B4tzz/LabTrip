@@ -13,14 +13,15 @@
 
 <h3>Tecnologias/Estilos/Tipo Aplicação</h3>
   <p> 
-Backend-> Javascript, Node.js, Express;<br>
+Backend-> Javascript, Node.js, Express, JWT;<br>
 Data-> Elephant SQL;<br>
-Frontend -> Javascript.
+Frontend -> Javascript, React.
   </p>
 
 <h3>Implementação</h3>
   <p> 
 -> Replit;<br>
+-> Github;<br>
 -> Swagger.
   </p>
 
