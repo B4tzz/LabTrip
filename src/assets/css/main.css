@@ -1,0 +1,71 @@
+/** GRID DISPLAY **/
+.grid-container {
+    display: grid;
+    grid-template-areas: "hd"
+                         "main"
+                         "ft";
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: ft
+}
+/*=========================================================*/
+
+/**SEMANTIC TAGS**/
+header {
+    background-color: #474a2c;
+}
+
+main {
+    background-color: #b4e7ce;
+}
+
+footer {
+    background-color: #474a2c;
+}
+
+body {
+    height: 100vh;
+}
+/*=========================================================*/
+
+/**HEADER**/
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+/*=========================================================*/
+
+/**FOOTER**/
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot p {
+    font-family: 'Open Sans', sans-serif;
+    color: #59A96A;
+}
+/*=========================================================*/
+
+/**MEDIA QUERIES**/
+:root {
+    font-size: 16px;
+}
+/*=========================================================*/
