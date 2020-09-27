@@ -46,6 +46,13 @@
 }
 
 @media (min-width: 900px) {
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
     .main-header{
         padding-top: 5rem;
         padding-bottom: 5rem;

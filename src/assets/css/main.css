@@ -100,11 +100,6 @@ body {
 }
 
 @media (min-width: 900px) {
-    .main-content {
-        display: flex;
-        
-    flex-wrap: wrap;
-        flex-direction: row;
-    }
+
 }
 /*=========================================================*/
