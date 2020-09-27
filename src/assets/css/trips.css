@@ -1,0 +1,60 @@
+.main-header{
+    width: 100%;
+    background-image: url(../images/mountain3.jpg);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    height: max-content;
+}
+
+.item{
+    width: 100%;
+    border-left: 0.3rem #252617;
+    border-left-style: solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgba(50, 51, 31,0.3);
+}
+
+.item-index{
+    padding: 0.5rem;
+    font-size: 3rem;;
+}
+
+.item-content{
+    margin-left: 1rem;
+}
+
+*=========================================================*/
+
+/**MEDIA QUERIES**/
+:root {
+    font-size: 16px;
+}
+
+@media (min-width: 900px) {
+    .main-header{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .item{
+        width: 15rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+/*=========================================================*/
