@@ -97,6 +97,10 @@ a{
         width: 15rem;
     }
 
+    .create-item-container{
+        width: 15rem; 
+    }
+
     .create-item{
         width: 7rem;
     }
