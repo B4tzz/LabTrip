@@ -59,13 +59,6 @@ body {
 }
 /*=========================================================*/
 
-.main-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
-}
-
 /**CONTENT**/
 .main-content {
     display: flex;
@@ -77,6 +70,12 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
     
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 /*=========================================================*/
 

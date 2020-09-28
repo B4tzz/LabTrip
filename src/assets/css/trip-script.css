@@ -1,0 +1,52 @@
+table {
+    /*border: 2px solid #252617;*/
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+thead {
+    background-color: #252617;
+    color: white;
+    border: none;
+}
+
+td {
+    border:none;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+
+th {
+    border: none;
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+.row-one {
+    background-color: #59A96A;
+}
+
+.row-two {
+    background-color: #9BDEAC;
+}
+
+/**MEDIA QUERIES**/
+:root {
+    font-size: 16px;
+}
+
+@media (min-width: 900px) {
+    td {
+        border:none;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    th {
+        border: none;
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+/*=========================================================*/
