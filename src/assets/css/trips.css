@@ -44,6 +44,21 @@
     margin-left: 1rem;
 }
 
+img{
+    width: 100%;
+}
+
+.create-item{
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -74,12 +89,16 @@ a{
         align-items: center; 
         text-align: center;
         justify-content: space-around;
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-left: 1rem;
     }
 
     .item{
         width: 15rem;
+    }
+
+    .create-item{
+        width: 7rem;
     }
 }
 /*=========================================================*/
