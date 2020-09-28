@@ -15,13 +15,16 @@
 }
 
 .item-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
     margin-bottom: 0.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
 }
 
 .item{
-    width: 100%;
     border-left: 0.3rem #252617;
     border-left-style: solid;
     display: flex;
@@ -55,7 +58,6 @@ a{
 
 @media (min-width: 900px) {
     .main-content {
-        display: flex;    
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
@@ -67,6 +69,11 @@ a{
     }
 
     .item-container{
+        width: max-content;
+        flex-direction: row;
+        align-items: center; 
+        text-align: center;
+        justify-content: space-around;
         margin-top: 2rem;
         margin-left: 1rem;
     }
