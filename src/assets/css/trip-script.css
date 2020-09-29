@@ -1,5 +1,4 @@
 table {
-    /*border: 2px solid #252617;*/
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -11,8 +10,14 @@ thead {
     border: none;
 }
 
+tfoot {
+    background-color: #252617;
+    color: white;
+    border: none;
+}
+
+
 td {
-    border:none;
     padding: 0.2rem;
     font-size: 0.9rem;
 }
@@ -24,12 +29,112 @@ th {
 }
 
 .row-one {
-    background-color: #59A96A;
+    background-color: #E0DFD5;
 }
 
 .row-two {
-    background-color: #9BDEAC;
+    background-color: #E8E9EB;
 }
+
+.item-options-trash p{
+    color: red;
+    font-size: 1.7rem;
+}
+
+.btn-edit:hover,
+.btn-edit:focus {
+    cursor: pointer;
+}
+
+/**MODAL**/
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 1rem;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 15% auto;
+    width: 80%;
+    height: 45%;
+    border-radius: 5%;
+}
+
+.modal-content p {
+    padding: 1rem;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.modal-header h2 {
+    font-size: 1.2rem;
+}
+
+.modal-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid grey;
+}
+
+.modal-footer button {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.close-btn button{
+    background-color: rgb(201, 199, 199);
+    color: black;
+}
+
+.close {
+    color: black;
+    font-size: 2rem;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    cursor: pointer;
+}
+
+/*=========================================================*/
 
 /**MEDIA QUERIES**/
 :root {
@@ -37,6 +142,10 @@ th {
 }
 
 @media (min-width: 900px) {
+    table {
+        border-collapse: collapse;
+    }
+
     td {
         border:none;
         padding: 1.5rem;

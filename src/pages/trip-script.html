@@ -13,7 +13,7 @@
 
 <body>
     <header class="head">
-        <h1> Trip Script </h1>
+        <h1> Roteiro de Viagem </h1>
     </header>
 
     <main class="main-section">
@@ -23,45 +23,107 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Activity</th>
-                        <th>Description</th>
-                        <th>$$</th>
-                        <th>Schedule</th>
+                        <th>Atv.</th>
+                        <th>Descrição</th>
+                        <th>R$</th>
+                        <th>Hr.</th>
+                        <th>Del.</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="row-one">
-                        <td>Activity 1</td>
+                        <td>Atividade 1</td>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                        <td>$60,00</td>
+                        <td>60,00</td>
                         <td>9:00</td>
+                        <td>
+                            <div class="item-options-trash">
+                                <span class="btn-edit">
+                                    <p>&#128465;</p>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
+
                     <tr class="row-two">
-                        <td>Activity 2</td>
+                        <td>Atividade 2</td>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum malesuada.</td>
-                        <td>$20,00</td>
+                        <td>20,00</td>
                         <td>11:15</td>
+                        <td>
+                            <div class="item-options-trash">
+                                <span class="btn-edit">
+                                    <p>&#128465;</p>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="row-one">
-                        <td>Activity 3</td>
+                        <td>Atividade 3</td>
                         <td>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elementum magna non maximus bibendum.</td>
                         <td>$115,00</td>
                         <td>14:30</td>
+                        <td>
+                            <div class="item-options-trash">
+                                <span class="btn-edit">
+                                    <p>&#128465;</p>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                     <tr class="row-two">
-                        <td>Activity 4</td>
+                        <td>Atividade 4</td>
                         <td>Pellentesque euismod vel risus quis fermentum.Harber Inc.</td>
-                        <td>$4,25</td>
+                        <td>4,25</td>
                         <td>18:50</td>
+                        <td>
+                            <div class="item-options-trash">
+                                <span class="btn-edit">
+                                    <p>&#128465;</p>
+                                </span>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td> - </td>
+                        <td>Total:</td>
+                        <td>199,25</td>
+                        <td> - </td>
+                        <td> - </td>
+                    </tr>
+                </tfoot>
             </table>
+
+            <div id="modal-trip-script" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Deletar Atividade</h2>
+                        <span class="close">&times;</span>   
+                    </div>
+                    <div class="modal-center">
+                    <p>Você está prestes a retirar a atividade ${atividade} da sua viagem.
+                        Deseja prosseguir?
+                    </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="close-btn">
+                        <button class="close-btn">Cancelar</button>
+                        </div>
+                        <button>Remover</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <footer class="foot">
         <p>LabTrib &trade; Todos os direitos reservados.</p>
     </footer>
+
+    <script src="../assets/js/trip-script.js"></script>
 </body>
 
 </html>
