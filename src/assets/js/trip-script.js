@@ -3,8 +3,10 @@ var btn = document.getElementsByClassName("btn-edit");
 var span = document.getElementsByClassName("close")[0];
 var close = document.getElementsByClassName("close-btn")[0];
 
-btn.onclick = function() {
-    modal.style.display = "flex";
+for(i=0; i < btn.length; i++){
+    btn[i].onclick = function() {
+        modal.style.display = "flex";
+    }
 }
 
 span.onclick = function() {
