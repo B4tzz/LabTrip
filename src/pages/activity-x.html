@@ -31,7 +31,13 @@
                 repudiandae explicabo tempora numquam at odio quis molestiae aspernatur.
                 </p>
 
-                <img src="../assets/images/bungee.jpg" alt="Atividade Bungee Jump">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="../assets/images/bungee-p.jpg">
+                    <source media="(max-width: 899px)" srcset="../assets/images/bungee-m.jpg">
+                    <source media="(min-width: 900px)" srcset="../assets/images/bungee-g.jpg">
+                        <img src="../assets/images/bungee-g.jpg" alt="Atividade Bungee Jump">
+                </picture>
+                <!-- <img src="../assets/images/bungee.jpg" alt="Atividade Bungee Jump"> -->
 
                 <button id="btn-activity">ADD TO TRIP</button>
                 <div id="modal-activity" class="modal">
@@ -52,12 +58,13 @@
                         </select>
                         </div>
                         <div class="modal-footer">
+                            <div class="close-btn">
                             <button class="close-btn">Cancel</button>
+                            </div>
                             <button>Commit to trip</button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
