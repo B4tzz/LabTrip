@@ -82,15 +82,16 @@
     align-items: center;
 }
 
-.item-options-trash p{
-    color: red;
-    font-size: 1.7rem;
+.item-options-trash i{
+    color: rgb(61, 61, 61);
+    font-size: 1.5rem;
 }
 
 .item-options-pencil p{
-    color: blue;
+    color: rgb(61, 61, 61);
     font-size: 1.7rem;
 }
+
 
 .line-divisory{
     width: 100%;
@@ -139,12 +140,36 @@ a{
     background-color: white;
     margin: 15% auto;
     width: 80%;
-    height: 45%;
+    height: max-content;
     border-radius: 5%;
+    padding: 0.5rem;
 }
 
 .modal-content p {
     padding: 1rem;
+}
+
+.modal-edit{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-dates{
+    display: flex;
+    flex-direction: column;
+}
+
+.start-date{
+    margin: 0.3rem;
+}
+
+.end-date{
+    margin: 0.3rem;
+}
+
+.modal-delete{
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-header {
@@ -181,6 +206,22 @@ a{
     margin-bottom: 0.5rem;
 }
 
+.close-btn{
+    background-color: rgb(201, 199, 199);
+    color: White;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.confirm-btn{
+    background-color: rgb(201, 199, 199);
+    color: White;
+    background-color: #59A96A;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
 .close {
     color: black;
     font-size: 2rem;
@@ -198,16 +239,17 @@ a{
     cursor: pointer;
 }
 
-.btn-edit:hover,
-.btn-edit:focus {
-    color: black;
+.btn-edit p:hover,
+.btn-edit p:focus {
+    color: blue;
     text-decoration: none;
     cursor: pointer;
 }
 
-.btn-edit:hover,
-.btn-edit:focus {
+.btn-delete i:hover,
+.btn-delete i:focus {
     cursor: pointer;
+    color: red;
 }
 
 /**MEDIA QUERIES**/
@@ -272,7 +314,11 @@ a{
 
     .modal-content {
         border-radius: 1rem;
+        width: max-content;
     }
 
+    .modal-dates{
+        flex-direction: row;
+    }
 }
 /*=========================================================*/
