@@ -8,8 +8,7 @@
     flex-direction: column;
     align-items: center; 
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: auto;
     color: white;
     height: max-content;
 }
@@ -152,6 +151,16 @@ a{
 .modal-edit{
     display: flex;
     flex-direction: column;
+}
+
+.modal-new{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-new:hover,
+#btn-new:focus{
+    cursor: pointer;
 }
 
 .modal-dates{

@@ -20,17 +20,15 @@
 
     <main class="main-section">
         <div class="main-header">
-            <h3>Crie e visualize suas viagens</h3>
+            <h3>Gerencie suas viagens</h3>
         </div>
         <div class="create-new-container">
             <div class="item-container">
-                <a href="#">
                     <div class="create-item-container">
                         <div class="create-item">
-                            <img src="../assets/images/mais.svg" />
+                            <img id="btn-new" src="../assets/images/mais.svg" />
                         </div>
                     </div>
-                </a>
             </div>
         </div>
         <div class="main-content">
@@ -262,6 +260,32 @@
                 <div class="modal-edit" id="modal-edit">
                     <div class="modal-header">
                         <h2>Edite sua viagem</h2>
+                        <span class="close">×</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title">
+                            <label for="title">Título</label><br>
+                            <input id="title" name="title" type="text" />
+                        </div>
+                        <div class="modal-dates">
+                            <div class="start-date">
+                                <label for="start-date">Data início</label><br>
+                                <input id="start-date" name="start-date" type="date" />
+                            </div>
+                            <div class="end-date">
+                                <label for="start-date">Data fim</label><br>
+                                <input id="start-date" name="start-date" type="date" />
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="close-btn">Cancelar</button>
+                        <button class="confirm-btn">Confirmar</button>
+                    </div>
+                </div>
+                <div class="modal-new" id="modal-new">
+                    <div class="modal-header">
+                        <h2>Crie sua viagem</h2>
                         <span class="close">×</span>
                     </div>
                     <div class="modal-body">
