@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/conta.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Lab Trip</title>
+</head>
+
+<body>
+   
+    <header class="head">
+        <div class="titulo">
+            <h1> Olá,  ${usuario} </h1>
+        </div>
+       
+        <nav id="navigation" class="navigation">
+            <ul>
+                <li><a href="conta.html">Conta</a></li>
+                <li><a href="trips.html">Viagens</a></li>
+                <li><a href="trip-script.html">Roteiros</a></li>
+                 <li id="threeline-icon" class="threeline-icon" onclick="openNav()"><a>&#9776;</a></li> 
+            </ul>                
+        </nav>
+   
+    </header>
+
+    <main class="main-section">
+        <div class="main-content">       
+            <img id= "img-conta" src="../assets/images/road.jpg" alt="Homem andando com mala na estrada"> 
+
+            <h1>Cadastro</h1>           
+ 
+         
+            <form class = "form-cadastro">
+                <label for="f-name">Nome completo: </label>
+                <input type="text" placeholder="nome">
+                <label for="f-email">E-mail:</label>
+                <input type="email" placeholder="email">
+                <label for="f-senha">Senha:</label>
+                <input type="password" placeholder="senha">
+                <label for="f-conf-senha">Confirmar senha: </label>
+                <input type="password" placeholder="confirmar senha">
+            </form> 
+
+            <button class="btn-confirmar">Editar</button>
+                
+    
+      
+    </main>
+
+    <footer class="foot">
+        <p>LabTrib &trade; Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../assets/js/conta.js"></script>
+</body>
+
+</html>

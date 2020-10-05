@@ -1,0 +1,134 @@
+#img-conta{
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 160px;
+    object-fit: cover;
+    width: 160px;    
+  }
+
+.head{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.titulo{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navigation{
+    position: absolute;
+    right: 0;
+}
+.navigation ul{
+    display: flex;
+    flex-direction: row;    
+}
+
+.navigation li{
+    display: none;
+    padding: 3px;
+    margin: 1px;
+    outline: none;
+    border-radius: 10px;    
+}
+
+.navigation li.threeline-icon { 
+    display: flex;
+}
+
+.navigation li.threeline-icon:hover { 
+    color: #474a2c;
+    cursor: pointer;
+}
+
+.navigation a { 
+    padding: 3px;
+    margin: 1px;
+    background-color: white;
+    color: #636940;
+    outline: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.navigation a:hover { 
+    color: black;
+}
+
+.menujs {    
+    margin: 0.5px;
+    top:30px;
+}
+
+.menujs ul {
+    display: flex;
+    flex-direction: column;  
+    margin: 0.5px;
+    background-color: #252617;
+}
+
+.menujs li {
+    display: flex;
+    padding: 3px;
+    margin: 1px;
+    outline: none;
+    border-radius: 10px;
+ 
+}
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;       
+}
+
+.form-cadastro input{
+    padding: 3px;
+    margin: 2px;
+}
+.form-cadastro label{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+.main-content button{
+    margin-top: 10px;
+    padding: 5px;
+    width: auto;
+    background-color: Transparent;
+    border: 2px solid #474a2c;
+    border-radius: 30px;
+    cursor:pointer;
+    outline:none;
+ } 
+
+ .main-content button:hover{
+    background-color: #636940;
+ }
+
+@media (min-width: 900px) {
+
+    #img-conta{
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;        
+    }
+
+    .navigation li { 
+        display: flex;
+    }
+
+    .navigation li.threeline-icon { 
+        display: none;
+     }
+
+
+ }

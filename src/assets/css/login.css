@@ -1,0 +1,273 @@
+
+#img-login{
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 160px;
+    object-fit: cover;
+    width: 160px;    
+  }
+
+  
+  h1{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.6em;
+  }  
+
+.login{
+   position:absolute;
+   border-radius: 15px;
+   width: 350px;
+   height: 300px;
+   align-content: center;
+   transform: translate(-50%,-50%);
+   top: 65%;
+   left: 50%    
+}
+
+.login p{
+    margin: 5px;
+    color: 474a2c;
+    font-family:'Roboto', sans-serif;
+}
+
+.login input{
+    margin: 2px; 
+    border-radius: 10px;
+    align-content: center;
+    top: 10%;
+    border-color: black;
+    height: 30px;
+    text-align: center;
+    width: 220px;
+    outline: none;
+}
+
+.login button{
+    margin-top: 10px;
+    padding: 5px;
+    width: auto;
+    background-color: Transparent;
+    border: 2px solid #474a2c;
+    border-radius: 30px;
+    cursor:pointer;
+    outline:none;
+}
+
+.login input:hover {
+    border: 2px solid #636940;
+}
+
+.login button:hover{
+   background-color: #636940;
+}
+
+.cadastrar{
+    margin-top: 15% ;
+    padding: 5px;
+}
+    
+.cadastrar p{
+    margin: 2px;
+}
+
+.cadastrar a{
+    padding: 3px;
+    margin-top: 8px;
+    font-size: 1.1rem;
+    width: 120px;
+    background-color: Transparent;
+    border: 2px solid #474a2c;
+    border-radius: 30px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    text-decoration:none;
+    font-family:'Roboto', sans-serif;
+    color: black;  
+}
+
+.cadastrar a:hover{
+    background-color: #636940;
+}
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;       
+}
+
+.form-cadastro input{
+    padding: 3px;
+    margin: 2px;
+}
+.form-cadastro label{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+.modal {   
+    display: none;
+    position: fixed;   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family:'Roboto', sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 0;
+    overflow: auto;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;    
+}
+
+.modal button {
+    text-decoration: none;
+    background-color: #252617;
+    border: 0.1rem solid #252617;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+.fechar {
+    width: 30px;
+    background: #636940;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    text-decoration:none;
+  } 
+
+
+.modal-content{
+    border-radius: 30px;
+    width: 25%;
+    height: 50%;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+    min-width: 250px;
+    min-height: 435px;
+}
+
+.modal-content p {
+    padding: 1rem;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.modal-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid grey;
+       
+}
+
+.modal-footer button {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;    
+    outline: none;
+    padding: 0.5rem;
+}
+.modal-footer button:hover{
+    border: 0.1rem solid #636940;    
+}
+
+.close {
+    color: black;
+    font-size: 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-close button{
+    background-color: rgb(201, 199, 199);
+    color: black;
+}
+
+
+.btn-close button:hover,
+.btn-close button:focus {
+    cursor: pointer;    
+}
+
+
+@media (min-width: 900px) {
+
+    #img-login{
+        border-radius: 100%;
+        height: 280px;
+        width: 280px; 
+        
+    }
+
+    .modal button {
+        text-decoration: none;
+        background-color: #252617;
+        border: 0.1rem solid #252617;
+        padding: 1rem;
+        border-radius: 10px;
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .modal-content{
+        height: 40%;
+        min-height: 430px;
+        
+    }    
+
+    .modal button {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .modal-footer button {
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        padding: 0.8rem;
+        border-radius: 12px;
+    }
+
+    .btn-close button{
+        background-color: rgb(201, 199, 199);
+        color: black; 
+    }
+
+ }

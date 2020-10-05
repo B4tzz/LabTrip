@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/login.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Lab Trip</title>
+</head>
+
+<body>
+   
+    <header class="head">
+        <h1> Login </h1>
+    </header>
+
+    <main class="main-section">
+        <div class="main-content">       
+            <img id= "img-login" src="../assets/images/airport.jpg" alt="Mulher olhando painel do aeroporto"> 
+
+            <h1>Vamos viajar ?</h1>           
+ 
+            <div class = "login">
+                <p class ="description">Entre com os dados da sua conta</p> 
+
+                <form class = "form-login">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="senha"> 
+                </form>
+                
+                <button class="btn-login">Login</button> 
+
+                <div class= "cadastrar">
+                    <p>Não tem conta ainda ? Cadastre-se agora !</p>                  
+                    <button id="btn-cadastro" > Cadastrar </button>
+                </div>
+                
+            </div>
+
+            <div id="modalCadastro" class= "modal" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Cadastre sua conta </h2>
+                       
+                        <span class="close">&times;</span>   
+                    </div>
+                    <div class="modal-center">
+                        <p>Comece agora a gerenciar sua viagens!</p>
+                        <form class = "form-cadastro">
+                            <label for="f-name">Nome completo: </label>
+                            <input type="text" placeholder="nome">
+                            <label for="f-email">E-mail:</label>
+                            <input type="email" placeholder="email">
+                            <label for="f-senha">Senha:</label>
+                            <input type="password" placeholder="senha">
+                            <label for="f-conf-senha">Confirmar senha: </label>
+                            <input type="password" placeholder="confirmar senha">
+                        </form>          
+                    </div>                                        
+                    <div class="modal-footer"> 
+                        <div class="btn-close" >
+                            <button class="btn-close" >Cancelar</button>
+                        </div>
+                        <button class="btn-confirmar">Cadastrar</button>        
+                    </div>
+                
+            </div>
+
+            
+        </div>       
+      
+    </main>
+
+    <footer class="foot">
+        <p>LabTrib &trade; Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../assets/js/login.js"></script>
+</body>
+
+</html>
