@@ -10,7 +10,7 @@
   </p>
 
 <h2>Open API Swagger Doc</h2>
-<a href="https://app.swaggerhub.com/apis/B4tzz/lab-trip/1.0">API Documentation</a>
+<a href="https://app.swaggerhub.com/apis/B4tzz/lab-trip/1.0" target="_blank">API Documentation</a>
 
 <h2>Requisitos não funcionais</h2>
 
