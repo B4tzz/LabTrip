@@ -1,0 +1,333 @@
+.main-header{
+    width: 100%;
+    background-image: url(../images/mountain3.jpg);
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: auto;
+    color: white;
+    height: max-content;
+}
+
+.main-content{
+    margin-top: 0.5rem;
+}
+
+.create-new-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.item-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: rgba(50, 51, 31,0.3);
+    border-left: 0.3rem #252617;
+    border-left-style: solid;
+    width:100%;
+}
+
+.item-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-around;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item-index{
+    padding: 0.5rem;
+    font-size: 3rem;;
+}
+
+.item-content{
+    margin-left: 1rem;
+}
+
+.item-options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.item-options-trash i{
+    color: rgb(61, 61, 61);
+    font-size: 1.5rem;
+}
+
+.item-options-pencil p{
+    color: rgb(61, 61, 61);
+    font-size: 1.7rem;
+}
+
+
+.line-divisory{
+    width: 100%;
+    padding: 0.1px;
+    background-color: rgba(81, 82, 77,0.3);
+    margin-top: 0.2rem;
+}
+
+img{
+    width: 100%;
+}
+
+.create-item{
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 1rem;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 15% auto;
+    width: 80%;
+    height: max-content;
+    border-radius: 5%;
+    padding: 0.5rem;
+}
+
+.modal-content p {
+    padding: 1rem;
+}
+
+.modal-edit{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-new{
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-new:hover,
+#btn-new:focus{
+    cursor: pointer;
+}
+
+.modal-dates{
+    display: flex;
+    flex-direction: column;
+}
+
+.start-date{
+    margin: 0.3rem;
+}
+
+.end-date{
+    margin: 0.3rem;
+}
+
+.modal-delete{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.modal-header h2 {
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    border-top: 1px solid grey;
+}
+
+.modal-footer button {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.close-btn{
+    background-color: rgb(201, 199, 199);
+    color: White;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.confirm-btn{
+    background-color: rgb(201, 199, 199);
+    color: White;
+    background-color: #59A96A;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.close {
+    color: black;
+    font-size: 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    cursor: pointer;
+}
+
+.btn-edit p:hover,
+.btn-edit p:focus {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-delete i:hover,
+.btn-delete i:focus {
+    cursor: pointer;
+    color: red;
+}
+
+/**MEDIA QUERIES**/
+:root {
+    font-size: 16px;
+}
+
+@media (min-width: 900px) {
+
+}
+/*=========================================================*/
+
+/*=========================================================*/
+
+/**MEDIA QUERIES**/
+:root {
+    font-size: 16px;
+}
+
+@media (min-width: 900px) {
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0.2rem;
+    }
+
+    .create-new-container{
+        margin-top: 0.2rem;
+    }
+
+    .main-header{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .item-container{
+        width: max-content;
+        flex-direction: row;
+        align-items: center; 
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+
+    .item-box{
+        width: 15rem;
+    }
+
+    .create-item-container{
+        width: 12rem; 
+    }
+
+    .create-item{
+        width: 5rem;
+    }
+
+    .item-options{
+        margin: 1rem;
+    }
+
+    .modal-content {
+        border-radius: 1rem;
+        width: max-content;
+    }
+
+    .modal-dates{
+        flex-direction: row;
+    }
+}
+/*=========================================================*/
