@@ -6,34 +6,23 @@ import * as serviceWorker from './serviceWorker';
 
 import express from 'express';
 import cors from 'cors';
-import UsuarioController from './usuarios/UsuarioController'
-import UsuarioMiddleware from './usuarios/UsuarioMiddleware'
+import defineUsuarioRouter from './usuarios/UsuarioRouter'
+import defineViagemRouter from './viagens/ViagemRouter'
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+export default function LabTrip() {
+  const app = express();
+  app.use(express.json());
+  app.use(cors());
+  app.use('/usuarios', defineUsuarioRouter());
+  app.use('/trips', defineViagemRouter());
 
+  app.get('/', function(req, res) {
 
-const usuarios = [
-  {id: 1, nome: 'Maria'},
-  {id: 2, nome: 'João' }
-];
+    res.status(200).send('Olá  mundo!');
+  });
 
-const usuarioController =  new UsuarioController(usuarios);
-const usuarioMiddleware =  new UsuarioMiddleware(usuarios);
-
-app.route('/usuarios')
-.get((req, res) => usuarioController.index(req,res))
-.post((req, res) => usuarioController.save(req, res))
-
-app.route('/usuarios/:id')
-.all((req, res, next) => usuarioMiddleware.usuarioExiste(req, res, next))
-.get((req, res) => usuarioController.show(req, res))
-.put((req, res) => usuarioController.update(req, res))
-.delete((req, res) => usuarioController.delete(req, res))
-
-
-
+  return app;
+}
 app.get('/', function(req, res){
     ReactDOM.render(
         <App />,
