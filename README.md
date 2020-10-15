@@ -9,6 +9,9 @@
       -> Gerenciar orçamento para viagem.
   </p>
 
+<h2>Open API Spec</h2>
+<a href="https://app.swaggerhub.com/apis/B4tzz/LabTrip/1.0.0-oas3" target="_blank">API Documentation</a>
+
 <h2>Requisitos não funcionais</h2>
 
 <h3>Tecnologias/Estilos/Tipo Aplicação</h3>
