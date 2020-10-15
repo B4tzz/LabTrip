@@ -28,7 +28,8 @@ export default class AtividadeRepository{
           atividadeNome: atividade.atividadeNome,
           atividadeDesc: atividade.atividadeDesc,
           atividadeValor: atividade.atividadeValor,
-          atividadeHr: atividade.atividadeHr
+          atividadeHr: atividade.atividadeHr,
+          tripId: atividade.tripId
         })
         .returning("*");
   

@@ -12,8 +12,8 @@ export default function defineAtividadeRouter(){
   const atividadeMiddleware = new AtividadeMiddleware(atividadeRepository);
 
   router.route('/')
-   .get((req, res) => AtividadeController.index(req, res))
-   .post((req, res) => AtividadeController.save(req, res));
+   .get((req, res) => atividadeController.index(req, res))
+   .post((req, res) => atividadeController.save(req, res));
 
   router.route('/:atividadeId')
     .all((req, res, next) => atividadeMiddleware.atividadeExiste(req, res, next))

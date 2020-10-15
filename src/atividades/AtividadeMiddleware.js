@@ -9,7 +9,7 @@ export default class AtividadeMiddleware{
       if(!atividade){
         return res.status(404).json({erro: 'Atividade não encontrada!'});       
       }
-      req.ativiade = atividade;
+      req.atividade = atividade;
       next(); 
     }
   }
